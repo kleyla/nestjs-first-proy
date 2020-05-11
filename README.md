@@ -46,6 +46,15 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+## Notes
+Help:
+```bash
+nest --help
+```
+Generar controlador
+```bash
+nest generate controlller name
+```
 
 ## Test
 
