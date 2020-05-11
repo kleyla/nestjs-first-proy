@@ -50,10 +50,23 @@ $ npm run start:prod
 Help:
 ```bash
 nest --help
-```
-Generar controlador
-```bash
+# Generar controlador
 nest generate controlller name
+# En el controlador para hacer Cruds necesitamos:
+@Get()
+metodo(){
+  return "resultado";
+}
+# Para nombrar la ruta:
+@Post('/test')
+metodoPost(){
+  return "Creando";
+}
+# Restringir el resultado:
+@Put()
+metodoPut(): string {
+  return "Actualizando";
+}
 ```
 
 ## Test
