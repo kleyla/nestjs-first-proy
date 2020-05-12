@@ -52,6 +52,10 @@ Help:
 nest --help
 # Generar controlador
 nest generate controlller name
+# Generar un servicio
+nest g service name
+# Generar Modulo
+nest g module name
 # En el controlador para hacer Cruds necesitamos:
 @Get()
 metodo(){
@@ -67,6 +71,7 @@ metodoPost(){
 metodoPut(): string {
   return "Actualizando";
 }
+# DTO Data transfer object
 ```
 
 ## Test
