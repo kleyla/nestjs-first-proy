@@ -73,6 +73,8 @@ metodoPut(): string {
 }
 # DTO Data transfer object
 ```
+Conexion con mongo:
+https://docs.nestjs.com/techniques/mongodb
 
 ## Test
 
