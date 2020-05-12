@@ -9,13 +9,13 @@ export class TasksController {
     constructor(private taskService: TasksService) { }
 
     @Get('/test')
-    getTasks(): Task[] {
+    getTasks(): Promise<Task[]> {
         return this.taskService.getTasks();
     }
 
     @Get(':id')
     getTask(@Param('id') id: string) {
-        return this.taskService.getTask(parseInt(id));
+        return this.taskService.getTask(id);
     }
 
     @Post()
